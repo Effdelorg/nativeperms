@@ -1,0 +1,37 @@
+name: native_perms
+description: A Flutter permissions plugin compatible with permission_handler, with native iOS Swift Package Manager support.
+version: 0.1.0
+homepage: https://github.com/effdel/native_perms
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+  meta: ^1.16.0
+  web: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.effdel.native_perms
+        pluginClass: NativePermsPlugin
+      ios:
+        pluginClass: NativePermsPlugin
+        sharedDarwinSource: false
+      web:
+        pluginClass: NativePermsWeb
+        fileName: native_perms_web.dart
+      windows:
+        pluginClass: NativePermsPluginCApi
