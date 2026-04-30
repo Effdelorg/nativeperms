@@ -1,12 +1,12 @@
-#ifndef FLUTTER_PLUGIN_NATIVE_PERMS_PLUGIN_H_
-#define FLUTTER_PLUGIN_NATIVE_PERMS_PLUGIN_H_
+#ifndef FLUTTER_PLUGIN_NATIVEPREMS_PLUGIN_H_
+#define FLUTTER_PLUGIN_NATIVEPREMS_PLUGIN_H_
 
 #include <flutter/method_channel.h>
 #include <flutter/plugin_registrar_windows.h>
 
 #include <memory>
 
-namespace native_perms {
+namespace nativeprems {
 
 class NativePermsPlugin : public flutter::Plugin {
  public:
@@ -23,6 +23,6 @@ class NativePermsPlugin : public flutter::Plugin {
       std::unique_ptr<flutter::MethodResult<flutter::EncodableValue>> result);
 };
 
-}  // namespace native_perms
+}  // namespace nativeprems
 
-#endif  // FLUTTER_PLUGIN_NATIVE_PERMS_PLUGIN_H_
+#endif  // FLUTTER_PLUGIN_NATIVEPREMS_PLUGIN_H_

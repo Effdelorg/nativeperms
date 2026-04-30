@@ -1,4 +1,4 @@
-package com.effdel.native_perms
+package com.effdel.nativeprems
 
 import android.Manifest
 import android.os.Build
@@ -123,7 +123,7 @@ internal object PermissionMapper {
         )
         STORAGE -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             // On 33+ scoped storage is in effect; storage is replaced by the per-media perms.
-            // Returning these gives the closest behavioral parity with permission_handler.
+            // Returning these keeps unavailable permissions predictable.
             listOf(
                 Manifest.permission.READ_MEDIA_IMAGES,
                 Manifest.permission.READ_MEDIA_VIDEO,

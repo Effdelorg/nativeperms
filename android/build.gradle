@@ -1,4 +1,4 @@
-group 'com.effdel.native_perms'
+group 'com.effdel.nativeprems'
 version '0.1.0'
 
 buildscript {
@@ -24,7 +24,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace 'com.effdel.native_perms'
+    namespace 'com.effdel.nativeprems'
     compileSdk 34
 
     defaultConfig {

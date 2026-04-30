@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.14)
-set(PROJECT_NAME "native_perms")
+set(PROJECT_NAME "nativeprems")
 project(${PROJECT_NAME} LANGUAGES CXX)
 
-set(PLUGIN_NAME "native_perms_plugin")
+set(PLUGIN_NAME "nativeprems_plugin")
 
 add_library(${PLUGIN_NAME} SHARED
-  "native_perms_plugin.cpp"
-  "native_perms_plugin_c_api.cpp"
+  "nativeprems_plugin.cpp"
+  "nativeprems_plugin_c_api.cpp"
 )
 
 apply_standard_settings(${PLUGIN_NAME})
@@ -19,7 +19,7 @@ target_include_directories(${PLUGIN_NAME} INTERFACE
 )
 target_link_libraries(${PLUGIN_NAME} PRIVATE flutter flutter_wrapper_plugin)
 
-set(native_perms_bundled_libraries
+set(nativeprems_bundled_libraries
   ""
   PARENT_SCOPE
 )

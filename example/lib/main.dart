@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:native_perms/native_perms.dart';
+import 'package:nativeprems/nativeprems.dart';
 
 void main() => runApp(const _App());
 
@@ -9,7 +9,7 @@ class _App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'native_perms demo',
+      title: 'nativeprems demo',
       theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo),
       home: const _Home(),
     );
@@ -66,7 +66,7 @@ class _HomeState extends State<_Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('native_perms demo'),
+        title: const Text('nativeprems demo'),
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.settings),

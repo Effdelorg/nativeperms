@@ -1,4 +1,4 @@
-#include "native_perms_plugin.h"
+#include "nativeprems_plugin.h"
 
 #include <flutter/method_channel.h>
 #include <flutter/plugin_registrar_windows.h>
@@ -6,7 +6,7 @@
 
 #include <memory>
 
-namespace native_perms {
+namespace nativeprems {
 
 namespace {
 // PermissionStatus / ServiceStatus indices mirror the Dart enums.
@@ -17,7 +17,7 @@ constexpr int kServiceNotApplicable = 2;
 void NativePermsPlugin::RegisterWithRegistrar(
     flutter::PluginRegistrarWindows* registrar) {
   auto channel = std::make_unique<flutter::MethodChannel<flutter::EncodableValue>>(
-      registrar->messenger(), "dev.effdel.native_perms/methods",
+      registrar->messenger(), "dev.effdel.nativeprems/methods",
       &flutter::StandardMethodCodec::GetInstance());
 
   auto plugin = std::make_unique<NativePermsPlugin>();
@@ -64,4 +64,4 @@ void NativePermsPlugin::HandleMethodCall(
   }
 }
 
-}  // namespace native_perms
+}  // namespace nativeprems

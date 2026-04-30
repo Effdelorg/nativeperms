@@ -1,4 +1,4 @@
-package com.effdel.native_perms
+package com.effdel.nativeprems
 
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothManager
@@ -6,7 +6,7 @@ import android.content.Context
 import android.location.LocationManager
 import android.telephony.TelephonyManager
 import androidx.core.location.LocationManagerCompat
-import com.effdel.native_perms.PermissionMapper as P
+import com.effdel.nativeprems.PermissionMapper as P
 
 internal object ServiceManager {
     fun checkServiceStatus(context: Context, permission: Int): Int = when (permission) {

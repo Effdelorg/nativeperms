@@ -1,4 +1,4 @@
-# native_perms_example
+# nativeprems_example
 
 A new Flutter project.
 

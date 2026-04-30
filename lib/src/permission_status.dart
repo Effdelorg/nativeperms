@@ -21,7 +21,7 @@ enum PermissionStatus {
   provisional,
 }
 
-/// Convenience getters that mirror the upstream `permission_handler` API.
+/// Convenience getters for readable permission status checks.
 extension PermissionStatusGetters on PermissionStatus {
   bool get isDenied => this == PermissionStatus.denied;
   bool get isGranted => this == PermissionStatus.granted;

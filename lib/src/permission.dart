@@ -1,11 +1,9 @@
-import 'native_perms_platform_interface.dart';
+import 'nativeprems_platform_interface.dart';
 import 'service_status.dart';
 
 /// Defines the permissions that the plugin supports.
 ///
-/// Numeric [value] is the wire format used on every platform. Values match
-/// the upstream `permission_handler` numbering so traces and downstream
-/// debuggers line up.
+/// Numeric [value] is the wire format used on every platform.
 class Permission {
   const Permission._(this.value);
 

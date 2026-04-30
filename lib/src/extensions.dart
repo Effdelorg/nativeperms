@@ -1,4 +1,4 @@
-import 'native_perms_platform_interface.dart';
+import 'nativeprems_platform_interface.dart';
 import 'permission.dart';
 import 'permission_status.dart';
 

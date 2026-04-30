@@ -7,7 +7,7 @@ public class NativePermsPlugin: NSObject, FlutterPlugin {
 
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(
-            name: "dev.effdel.native_perms/methods",
+            name: "dev.effdel.nativeprems/methods",
             binaryMessenger: registrar.messenger()
         )
         let instance = NativePermsPlugin()

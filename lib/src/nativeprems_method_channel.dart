@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
-import 'native_perms_platform_interface.dart';
+import 'nativeprems_platform_interface.dart';
 import 'permission.dart';
 import 'permission_status.dart';
 import 'service_status.dart';
@@ -11,7 +11,7 @@ import 'service_status.dart';
 class MethodChannelNativePerms extends NativePermsPlatform {
   @visibleForTesting
   final MethodChannel methodChannel = const MethodChannel(
-    'dev.effdel.native_perms/methods',
+    'dev.effdel.nativeprems/methods',
   );
 
   @override

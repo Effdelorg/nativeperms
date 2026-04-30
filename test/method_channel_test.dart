@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:native_perms/native_perms.dart';
-import 'package:native_perms/src/native_perms_method_channel.dart';
+import 'package:nativeprems/nativeprems.dart';
+import 'package:nativeprems/src/nativeprems_method_channel.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

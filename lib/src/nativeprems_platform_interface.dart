@@ -3,9 +3,9 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'permission.dart';
 import 'permission_status.dart';
 import 'service_status.dart';
-import 'native_perms_method_channel.dart';
+import 'nativeprems_method_channel.dart';
 
-/// Platform interface for `native_perms`. Lives inside this package (not a
+/// Platform interface for `nativeprems`. Lives inside this package (not a
 /// separate `*_platform_interface` package) — there is no plan to publish
 /// out-of-tree platform implementations.
 abstract class NativePermsPlatform extends PlatformInterface {

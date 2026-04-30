@@ -2,17 +2,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "native_perms",
+    name: "nativeprems",
     platforms: [
         .iOS("12.0")
     ],
     products: [
-        .library(name: "native-perms", targets: ["native_perms"])
+        .library(name: "nativeprems", targets: ["nativeprems"])
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "native_perms",
+            name: "nativeprems",
             dependencies: [],
             resources: [],
             linkerSettings: [

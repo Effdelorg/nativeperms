@@ -1,4 +1,4 @@
-package com.effdel.native_perms
+package com.effdel.nativeprems
 
 import android.app.Activity
 import android.app.AlarmManager
@@ -13,7 +13,7 @@ import android.provider.Settings
 import androidx.core.app.ActivityCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
-import com.effdel.native_perms.PermissionMapper as P
+import com.effdel.nativeprems.PermissionMapper as P
 
 /**
  * Orchestrates check / request flows. Two paths:
@@ -26,7 +26,7 @@ import com.effdel.native_perms.PermissionMapper as P
  *
  * Pre-Android-13 notification permission is settings-driven (no runtime grant);
  * we surface NotificationManagerCompat.areNotificationsEnabled() and treat
- * a request as a check, matching permission_handler.
+ * a request as a check.
  */
 internal class PermissionManager(private val context: Context) {
 

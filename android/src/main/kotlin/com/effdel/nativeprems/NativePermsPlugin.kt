@@ -1,4 +1,4 @@
-package com.effdel.native_perms
+package com.effdel.nativeprems
 
 import android.content.Intent
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -20,7 +20,7 @@ class NativePermsPlugin :
     private var activityBinding: ActivityPluginBinding? = null
 
     override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
-        channel = MethodChannel(binding.binaryMessenger, "dev.effdel.native_perms/methods")
+        channel = MethodChannel(binding.binaryMessenger, "dev.effdel.nativeprems/methods")
         channel.setMethodCallHandler(this)
         manager = PermissionManager(binding.applicationContext)
     }

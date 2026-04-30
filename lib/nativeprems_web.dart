@@ -1,5 +1,5 @@
 /// Web entry point. Registered via `pubspec.yaml` `flutter.plugin.platforms.web`.
-library native_perms_web;
+library nativeprems_web;
 
 import 'dart:async';
 import 'dart:js_interop';
@@ -7,7 +7,7 @@ import 'dart:js_interop';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:web/web.dart' as web;
 
-import 'native_perms.dart';
+import 'nativeprems.dart';
 
 class NativePermsWeb extends NativePermsPlatform {
   static void registerWith(Registrar registrar) {

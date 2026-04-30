@@ -1,4 +1,4 @@
-package com.effdel.native_perms
+package com.effdel.nativeprems
 
 import android.content.Context
 import android.content.Intent

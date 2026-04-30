@@ -1,4 +1,4 @@
-package com.effdel.native_perms_example
+package com.effdel.nativeprems_example
 
 import io.flutter.embedding.android.FlutterActivity
 
