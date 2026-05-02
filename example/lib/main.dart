@@ -12,6 +12,7 @@ class _App extends StatelessWidget {
       title: 'nativeprems demo',
       theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.indigo),
       home: const _Home(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -26,8 +27,8 @@ class _Home extends StatefulWidget {
 class _HomeState extends State<_Home> {
   final Map<Permission, PermissionStatus?> _statuses =
       <Permission, PermissionStatus?>{
-    for (final Permission p in Permission.values) p: null,
-  };
+        for (final Permission p in Permission.values) p: null,
+      };
   final Map<Permission, ServiceStatus?> _services =
       <Permission, ServiceStatus?>{};
 
@@ -72,8 +73,9 @@ class _HomeState extends State<_Home> {
             icon: const Icon(Icons.settings),
             tooltip: 'Open app settings',
             onPressed: () async {
-              final ScaffoldMessengerState messenger =
-                  ScaffoldMessenger.of(context);
+              final ScaffoldMessengerState messenger = ScaffoldMessenger.of(
+                context,
+              );
               final bool ok = await openAppSettings();
               messenger.showSnackBar(
                 SnackBar(content: Text('openAppSettings() => $ok')),
@@ -96,10 +98,12 @@ class _HomeState extends State<_Home> {
           final ServiceStatus? svc = _services[p];
           return ListTile(
             title: Text(p.toString()),
-            subtitle: Text(<String>[
-              'status: ${status ?? "—"}',
-              if (p is PermissionWithService) 'service: ${svc ?? "—"}',
-            ].join('   ')),
+            subtitle: Text(
+              <String>[
+                'status: ${status ?? "—"}',
+                if (p is PermissionWithService) 'service: ${svc ?? "—"}',
+              ].join('   '),
+            ),
             trailing: Wrap(
               spacing: 4,
               children: <Widget>[
