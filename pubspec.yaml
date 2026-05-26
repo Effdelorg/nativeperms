@@ -1,9 +1,9 @@
 name: nativeprems
 description: A Flutter permissions plugin with native iOS Swift Package Manager support.
 version: 0.1.0
-homepage: https://github.com/Effdelorg/nativeprems
-repository: https://github.com/Effdelorg/nativeprems
-issue_tracker: https://github.com/Effdelorg/nativeprems/issues
+homepage: https://github.com/Effdelorg/nativeperms
+repository: https://github.com/Effdelorg/nativeperms
+issue_tracker: https://github.com/Effdelorg/nativeperms/issues
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
