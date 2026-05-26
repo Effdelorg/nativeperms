@@ -120,3 +120,7 @@ app.*.symbols
 /.vscode
 /ios/nativeprems/.build/
 .DS_Store
+
+
+#tools
+tool/publish.sh
